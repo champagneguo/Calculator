@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/*
+* Copyright (C) 2011, The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/advancedPad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/factorial"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mm"
+            android:text="@string/factorial"
+            android:textColor="@android:color/transparent" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/power"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/square"
+            android:text="@string/power"
+            android:textColor="@android:color/transparent" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/sqrt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sqrt"
+            android:textColor="@android:color/transparent"
+            android:text="@string/sqrt" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/pi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pi"
+            android:textColor="@android:color/transparent"
+            android:text="@string/pi" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sci_c"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digitc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/sin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sci"
+            android:textColor="@android:color/transparent"
+            android:text="@string/sin" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/leftParen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/left"
+            android:textColor="@android:color/transparent"
+            android:text="@string/leftParen" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/rightParen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/right"
+            android:textColor="@android:color/transparent"
+            android:text="@string/rightParen" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/e"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_e"
+            android:textColor="@android:color/transparent"
+            android:text="@string/e" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/del"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sci_del"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digitdel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/cos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cos"
+            android:textColor="@android:color/transparent"
+            android:text="@string/cos" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_7"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit7" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_8"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit8" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_9"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit9" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/div"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_div"
+            android:textColor="@android:color/transparent"
+            android:text="@string/div" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/tan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_tan"
+            android:textColor="@android:color/transparent"
+            android:text="@string/tan" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_4"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit4" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_5"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit5" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_6"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit6" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/mul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_mul"
+            android:textColor="@android:color/transparent"
+            android:text="@string/mul" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/ln"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_ln"
+            android:textColor="@android:color/transparent"
+            android:text="@string/ln" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_1"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit1" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_2"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit2" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_3"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit3" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_minus"
+            android:textColor="@android:color/transparent"
+            android:text="@string/minus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/lg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_log"
+            android:textColor="@android:color/transparent"
+            android:text="@string/lg" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_digit_0"
+            android:textColor="@android:color/transparent"
+            android:text="@string/digit0" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/dot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_dot"
+            android:textColor="@android:color/transparent"
+            android:text="@string/dot" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_equals"
+            android:textColor="@android:color/transparent"
+            android:text="@string/equal" />
+
+        <com.android.calculator2.ColorButton
+            android:id="@+id/plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sci_plus"
+            android:textColor="@android:color/transparent"
+            android:text="@string/plus" />
+    </LinearLayout>
+
+</LinearLayout>

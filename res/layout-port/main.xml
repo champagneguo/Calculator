@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calculator_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" > 
+    
+     <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="18.66dp"
+            android:background="@drawable/image_btn" />
+
+    <FrameLayout
+        android:background="@color/calculator_background"
+        android:layout_width="fill_parent"
+        android:layout_height="154dp"
+        android:layout_marginTop="14dp"
+        >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dip"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/history"
+                android:textColor="#ff969ba3"
+                style="@style/my_text"
+                android:gravity="bottom|right" 
+                android:layout_marginRight="2dp"/>
+
+            <FrameLayout
+                android:descendantFocusability="afterDescendants"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip" >
+
+                <com.android.calculator2.CalculatorDisplay
+                    android:descendantFocusability="afterDescendants"
+                    android:id="@+id/display"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    maxDigits="@integer/max_digits" >
+
+                    <com.android.calculator2.CalculatorEditText
+                        android:id="@+id/main_edit1"
+                        android:layout_gravity="bottom|right"
+                        android:focusable="true"
+                        android:textColor="@android:color/black"
+                        style="@style/display_style" />
+
+                    <com.android.calculator2.CalculatorEditText
+                        android:id="@+id/main_edit2"
+                        android:layout_gravity="bottom|right"
+                        android:focusable="true"
+                        android:textColor="@android:color/black"
+                        style="@style/display_style2" />
+                </com.android.calculator2.CalculatorDisplay>
+
+                <com.android.calculator2.MyTextView
+                    android:id="@+id/display_text_view"
+                    style="@style/display_style"
+                    android:layout_width="632dip"
+                    android:layout_gravity="right"
+                    android:textColor="#0ff"
+                    android:visibility="invisible"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+        
+     <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ruiemi_final_mask"/>
+     
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginTop="14dp"
+        android:id="@+id/pad_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" 
+        />
+
+</LinearLayout>
